@@ -1,3 +1,96 @@
 * {
     box-sizing: border-box;
 }
+
+body {
+    background-color: darkgoldenrod;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70vw;
+    margin: 0 auto;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: lightgray;
+    background-color: darkred;
+}
+
+.left-side {
+    width: 40%;
+    height: auto;
+}
+
+.right-side {
+    width: 60%;
+    height: 100vh;
+}
+
+.signup-form {
+    background-color: darkgoldenrod;
+    color: white;
+    padding: 40px;
+}
+
+.form-row {
+    display: flex;
+    gap: 15px;
+    margin: 5px 0;
+}
+
+.form-item {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#Benny {
+    display: block;
+    object-fit: contain;
+    width: 100%;
+}
+
+.main-text {
+    width: 80%;
+    margin: 100px 0 50px 0;
+    padding: 0 40px;
+}
+
+legend {
+    font-size: 24px;
+    margin-bottom: 35px;
+}
+
+label {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.form-row input[type="text"],
+.form-row input[type="email"],
+.form-row input[type="password"],
+.form-row input[type="tel"] {
+    font-size: 18px;
+}
+
+a {
+    color: aqua;
+}
+
+.submit-button {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px;
+    margin: 40px;
+    color: white;
+    background-color: darkgoldenrod;
+    border-radius: 15px;
+}
+
+.bottom-text {
+    font-size: 24px;
+    margin: 0 40px;
+}
