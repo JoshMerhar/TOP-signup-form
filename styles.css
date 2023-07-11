@@ -3,40 +3,43 @@
 }
 
 body {
-    background-color: darkgoldenrod;
-    margin: 0;
+    margin: 75px 0;
 }
 
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 70vw;
-    margin: 0 auto;
+    width: 80vw;
+    height: 80vh;
+    margin: 50px auto;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: lightgray;
-    background-color: darkred;
+    color: white;
+    background-color: rgb(122, 122, 122);
+    border-radius: 25px;
+    overflow: hidden;
 }
 
 .left-side {
+    position: relative;
     width: 40%;
-    height: auto;
+    height: 100%;
 }
 
 .right-side {
     width: 60%;
-    height: 100vh;
+    height: 100%;
 }
 
 .signup-form {
-    background-color: darkgoldenrod;
+    background-color: darkred;
     color: white;
     padding: 40px;
 }
 
 .form-row {
     display: flex;
-    gap: 15px;
+    gap: 25px;
     margin: 5px 0;
 }
 
@@ -48,14 +51,34 @@ body {
 }
 
 #Benny {
-    display: block;
-    object-fit: contain;
     width: 100%;
+}
+
+.odin-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    position: absolute;
+    width: 100%;
+    margin: 65px 0;
+    background-color: black;
+    opacity: .65;
+}
+
+h1 {
+    font-size: 8rem;
+    line-height: .75rem;
+}
+
+#logo {
+    position: relative;
+    width: 20%;
 }
 
 .main-text {
     width: 80%;
-    margin: 100px 0 50px 0;
+    margin: 50px 0;
     padding: 0 40px;
 }
 
@@ -65,7 +88,7 @@ legend {
 }
 
 label {
-    font-size: 18px;
+    font-size: 14px;
     font-weight: bold;
 }
 
@@ -86,7 +109,7 @@ a {
     padding: 10px;
     margin: 40px;
     color: white;
-    background-color: darkgoldenrod;
+    background-color: darkred;
     border-radius: 15px;
 }
 

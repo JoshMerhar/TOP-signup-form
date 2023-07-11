@@ -9,13 +9,17 @@
 <body>
     <div class="container">
         <div class="left-side">
+            <div class="odin-logo">
+                <img src="./odin-lined.png" id="logo" />
+                <h1>ODIN</h1>
+            </div>
             <div class="background-image">
                 <img src="./Benny.JPG" id="Benny" />
             </div>
         </div>
         <div class="right-side">
             <header>
-                <h2 class="main-text">This isn't real. None of this is real. It was never real. But don't let that deter you. Sign up to learn nothing more.</h2>
+                <h2 class="main-text">This isn't real. None of this is real. It was never real. But don't let that deter you! Sign up to learn nothing more.</h2>
             </header>
             <form action="" method="get" class="signup-form">
                 <legend>Give me your info!</legend>
@@ -49,6 +53,8 @@
                         <input type="password" id="password-confirm" name="password-confirm" required />
                     </div>
                 </div>
+                <input type="checkbox" id="updates" name="updates" checked />
+                <label for="updates">Receive email updates</label>
             </form>
             <button type="submit" class="submit-button">Create Account</button>
             <p class="bottom-text">Already have an account? <a href="">Log in here!</a></p>
