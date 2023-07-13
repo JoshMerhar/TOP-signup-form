@@ -50,6 +50,18 @@ body {
     flex-wrap: wrap;
 }
 
+.checkbox {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    gap: 5px;
+}
+
+.checkbox input[type="checkbox"] {
+    width: 1rem;
+    height: 1rem;
+}
+
 #Benny {
     width: 100%;
 }
@@ -63,12 +75,18 @@ body {
     width: 100%;
     margin: 65px 0;
     background-color: black;
-    opacity: .65;
+    opacity: .7;
+}
+
+@font-face {
+    font-family: Norse;
+    src: url(./Norse-Bold.otf);
 }
 
 h1 {
-    font-size: 8rem;
-    line-height: .75rem;
+    font-family: Norse;
+    font-size: 10rem;
+    line-height: .1rem;
 }
 
 #logo {
@@ -85,10 +103,11 @@ h1 {
 legend {
     font-size: 24px;
     margin-bottom: 35px;
+    font-weight: bold;
 }
 
 label {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: bold;
 }
 
@@ -97,6 +116,23 @@ label {
 .form-row input[type="password"],
 .form-row input[type="tel"] {
     font-size: 18px;
+}
+
+.form-item input[type="text"]:hover,
+.form-item input[type="email"]:hover,
+.form-item input[type="password"]:hover,
+.form-item input[type="tel"]:hover {
+    outline: none;
+    border: 2px solid aqua;
+}
+
+.form-item input[type="text"]:focus,
+.form-item input[type="email"]:focus,
+.form-item input[type="password"]:focus,
+.form-item input[type="tel"]:focus {
+    outline: none;
+    border: 2px solid aqua;
+    box-shadow: 3px 3px 3px white;
 }
 
 a {
@@ -111,6 +147,13 @@ a {
     color: white;
     background-color: darkred;
     border-radius: 15px;
+    border-style: none;
+    box-shadow: 3px 3px 3px black;
+}
+
+.submit-button:hover {
+    color: darkred;
+    background-color: white;
 }
 
 .bottom-text {

@@ -46,15 +46,22 @@
                 <div class="form-row">
                     <div class="form-item">
                         <label for="password">Password</label>
-                        <input type="password" id="password" name="password" required />
+                        <input type="password" id="password" name="password" class="password error" required />
                     </div>
                     <div class="form-item">
                         <label for="password-confirm">Confirm Password</label>
-                        <input type="password" id="password-confirm" name="password-confirm" required />
+                        <input type="password" id="password-confirm" name="password-confirm" class="password-confirm error" required />
+                    </div>
+                    <script>
+                        
+                    </script>
+                </div>
+                <div class="form-row">
+                    <div class="checkbox">
+                        <input type="checkbox" id="updates" name="updates" checked />
+                        <label for="updates">Receive email updates</label>
                     </div>
                 </div>
-                <input type="checkbox" id="updates" name="updates" checked />
-                <label for="updates">Receive email updates</label>
             </form>
             <button type="submit" class="submit-button">Create Account</button>
             <p class="bottom-text">Already have an account? <a href="">Log in here!</a></p>
