@@ -17,6 +17,7 @@ body {
     color: white;
     background-color: rgb(122, 122, 122);
     border-radius: 25px;
+    box-shadow: 10px 10px 5px rgb(80, 80, 80);
     overflow: hidden;
 }
 
@@ -24,11 +25,13 @@ body {
     position: relative;
     width: 40%;
     height: 100%;
+    overflow: hidden;
 }
 
 .right-side {
     width: 60%;
     height: 100%;
+    overflow: auto;
 }
 
 .signup-form {
@@ -115,7 +118,7 @@ label {
 .form-row input[type="email"],
 .form-row input[type="password"],
 .form-row input[type="tel"] {
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .form-item input[type="text"]:hover,
@@ -124,6 +127,7 @@ label {
 .form-item input[type="tel"]:hover {
     outline: none;
     border: 2px solid aqua;
+    border-radius: 2px;
 }
 
 .form-item input[type="text"]:focus,
@@ -132,7 +136,19 @@ label {
 .form-item input[type="tel"]:focus {
     outline: none;
     border: 2px solid aqua;
+    border-radius: 2px;
     box-shadow: 3px 3px 3px white;
+}
+
+input:invalid {
+    border-color: red;
+}
+
+input[type="text"]:valid,
+input[type="email"]:valid,
+input[type="password"]:valid {
+    border-color: rgb(28, 247, 28);
+    border-radius: 2px;
 }
 
 a {
@@ -149,11 +165,21 @@ a {
     border-radius: 15px;
     border-style: none;
     box-shadow: 3px 3px 3px black;
+    transition: .2s;
+}
+
+.submit-button:hover, .submit-button:active {
+    color: darkred;
+    background-color: white;
 }
 
 .submit-button:hover {
-    color: darkred;
-    background-color: white;
+    transform: scale(1.03);
+}
+
+.submit-button:active {
+    transform: scale(0.98);
+    box-shadow: none;
 }
 
 .bottom-text {
